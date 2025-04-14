@@ -71,7 +71,7 @@ docker push khanpirate/simpletimeservice:latest
 Ensure `terraform.tfvars` contains:
 
 ```hcl
-container_image = "khanpirate/simpletimeservice:latest"
+container_image = "docker.io/khanpirate/simpletimeservice:latest"
 ```
 
 ### 4. Deploy Infrastructure with Terraform
