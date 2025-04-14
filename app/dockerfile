@@ -1,0 +1,15 @@
+FROM python:3.9-slim
+
+RUN useradd -m appuser
+
+WORKDIR /app
+
+COPY simple_time_service.py /app/
+
+RUN pip install flask
+
+RUN chown -R appuser /app
+USER appuser
+
+EXPOSE 8080
+CMD ["python", "simple_time_service.py"]
