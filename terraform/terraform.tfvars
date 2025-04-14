@@ -1,0 +1,1 @@
+container_image = "docker.io/khanpirate/simpletimeservice:latest"
